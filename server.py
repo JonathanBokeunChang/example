@@ -18,7 +18,7 @@ def write(num):
 
 @app.route("/click", methods=["POST"])
 def click():
-    current = read()
+    current = read() 
     current = current + 1
     write(current)
     return str(current)
